@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Consolas;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 90vh;
+    background: #F5F5F5;
+    margin: 5px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-phone
+/*1ª coluna */
+
+{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.instagram-phone img {
+    height: 600px;
+}
+
+.instagram-access
+/*2ª coluna */
+
+{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 30%;
+    height: 650px;
+}
+
+.instagram-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    border: 5px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    width: 85%;
+}
+
+.group {
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri;
+    margin: 10px;
+    border: 2px solid #E8E8E8;
+    padding: 25px;
+    width: 100%;
+    background: white;
+}
+
+.group:nth-child(1) {
+    height: 45vh;
+}
+
+.group:nth-child(2) {
+    height: 65px;
+    padding: 21px;
+}
+
+.group:nth-child(3) {
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 2px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 2px solid #BEBEBE;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    background: #E8E8E8
+}
+
+.senha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: 2px solid #BEBEBE;
+    border-radius: 2px;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    background: #E8E8E8
+}
+
+.enter {
+    font-size: 15px;
+    border: 5px;
+    border-radius: 5%;
+    padding: 8px;
+    width: 100%;
+    color: #FFFAFA;
+    background: #1E90FF;
+}
+
+.ou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: #696969;
+}
+
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Calibri;
+    font-size: 15px;
+    font-weight: bold;
+    color: #00008B;
+    padding: 10px;
+}
+
+.forget-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 3px;
+}
+
+.no-account {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding-bottom: 100px;
+    color: #CD853F;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #00BFFF;
+}
+
+.get-the-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 100%;
+    padding: 5px;
+}
+
+.mão {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.mão img {
+    width: 10%;
+}
+
+.download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+
+.download-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    width: 160px;
+    margin: 10px;
+    background-size: cover;
+}
+
+.download-app:nth-child(1) {
+    background-image: url('./img/App_Store.png');
+}
+
+.download-app:nth-child(2) {
+    background-image: url('./img/Google_Play.png');
+}
+
+
+/* Media Queries */
+
+
+/* Configuração Desktop */
+
+@media screen and (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+
+/* Configuração Tablet */
+
+@media (min-width: 651px) and (max-width: 1000px) {
+    body {
+        background: #FFA54F;
+    }
+    .instagram-wrapper {
+        width: 100%;
+    }
+    .instagram-phone {
+        display: flex;
+    }
+    .instagram-access {
+        width: 100%;
+    }
+    .group {
+        background: #FF1493;
+    }
+}
+
+
+/* Configuração Celular */
+
+@media (max-width: 650px) {
+    body {
+        background: #DB7093;
+    }
+    .instagram-wrapper {
+        width: 90%;
+    }
+    .instagram-phone {
+        display: none;
+    }
+    .instagram-access {
+        width: 100%;
+    }
+    .group {
+        border: 1px solid transparent;
+        background: #AB82FF;
+    }
+}
